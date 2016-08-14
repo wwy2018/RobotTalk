@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/robot_view"
+    android:clickable="true"
+    tools:context="com.example.jowang.navigationbar.RobotHelpActivity">
+    <include
+        layout="@layout/robot_tool_bar"
+        android:id="@+id/robot_bar"/>
+    <ListView
+        android:id="@+id/my_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/robot_bar"
+        android:layout_above="@+id/rl"
+        android:divider="@null"
+        android:dividerHeight="5dp" >
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="3dp"
+        android:background="#000000" >
+
+        <Button
+            android:id="@+id/id_send_msg"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#bebebe"
+            android:text="发送" />
+
+        <EditText
+            android:id="@+id/id_input_msg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/id_send_msg"
+            android:background="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>

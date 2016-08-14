@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/robotbar"
+    android:elevation="10dp"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="小熊Talk"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        />
+</android.support.v7.widget.Toolbar>
